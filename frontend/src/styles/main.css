@@ -1,0 +1,90 @@
+/* body {
+    margin: 0px;
+    font-family: "Arial", sans-serif;
+    
+    background: linear-gradient(90deg, #cb2b27, #ff5e0f);
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  input, select, button {
+    font-family: inherit;
+  }
+   
+
+ */
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border don't affect the width and height */
+}
+
+/* Link Styling */
+a {
+  color: #ff5e0f; /* Orange color */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+a:hover {
+  color: #cb2b27; /* Darker red on hover */
+}
+
+/* Form Elements Styling */
+input, select, button {
+  width: 100%;  /* Ensure form elements take up the full width available */
+  padding: 12px; /* Slightly larger padding for better touch target on mobile */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, button:hover {
+  border-color: #ff5e0f;
+  box-shadow: 0 0 8px rgba(255, 94, 15, 0.6);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (max-width 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  input, select, button {
+    font-size: 14px; /* Adjust font size for smaller devices */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+/* For mobile devices (max-width 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  input, select, button {
+    font-size: 12px; /* Further reduce font size for mobile */
+    padding: 8px;  /* Adjust padding for smaller touch targets */
+  }
+}

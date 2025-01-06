@@ -1,0 +1,211 @@
+/* styles/StudentDashboard.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  /* background-color: #f4f4f4; */
+  background: linear-gradient(90deg, #ff5e0f, #cb2b27 117.2%);
+  position: relative;
+}
+
+/* Container for the form */
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  /* padding: 30px; */
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Centered heading */
+h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  /* border-bottom: 2px solid #007bff; */
+  padding-bottom: 10px;
+}
+
+/* Styling for each paragraph in the details */
+.details-container {
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.details-container p {
+  font-size: 1rem;
+  margin: 0;
+  color: #444;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.details-container p:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details-container p span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 12px;
+  margin-top: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+button.logout-btn {
+  background-color: #dc3545;
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+button.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Edit form container */
+.edit-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input and text area styling for the edit form */
+.edit-form-container input,
+.edit-form-container select,
+.edit-form-container textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Button in edit form */
+.edit-form-container button {
+  background-color: #28a745;
+}
+
+.edit-form-container button:hover {
+  background-color: #218838;
+}
+
+/* Fade-in animation */
+.animation-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Positioning the logout button at the top-right corner */
+.logout-btn-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Enhance styling for spacing and details container */
+.details-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+}
+
+
+/* Styling labels within details */
+.details-container p span {
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 8px;
+}
+
+/* Action buttons container */
+.action-buttons {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: 260px;
+}
+
+/* Edit button */
+button.edit-btn {
+  background-color: #28a745;
+}
+
+button.edit-btn:hover {
+  background-color: #218838;
+}
+
+/* Delete button */
+button.delete-btn {
+  background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}

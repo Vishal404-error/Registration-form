@@ -1,0 +1,58 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variable files
+.env
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+
+# Debug files
+debug/
+*.pid
+*.seed
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore uploads or generated files
+uploads/
+generated/
+
+# Test coverage files
+coverage/
+*.lcov
+
+# Database files
+*.sqlite
+*.db
+
+# Miscellaneous
+*.log.*
+*.out
+*.lock

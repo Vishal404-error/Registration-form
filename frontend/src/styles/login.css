@@ -1,0 +1,222 @@
+/* General login container styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+  }
+  
+  /* Styling for the form */
+  .login-container form {
+    background: white;
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    transform: translate(0, 0); /* Remove any accidental transforms */
+    transition: none; /* Prevent unintended motion effects */
+  }
+  
+  /* Input container to align the icon and the input on the same row */
+  .input-container {
+    display: flex;
+    align-items: center; /* Aligns the icon and input vertically in the same row */
+    gap: 10px; /* Adds space between the icon and input */
+  }
+  
+  /* Message icon styling */
+  .message {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .password-input {
+    display: flex;
+    align-items: center; /* Aligns the icon and input vertically in the same row */
+    gap: 10px; /* Adds space between the icon and input */
+  }
+  
+  .padlock {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  /* Input field styling */
+  .login-container input {
+    width: 90%;
+    padding: 1rem 1rem;
+    margin-top: 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+  
+  /* Input focus styles */
+  .login-container input:focus {
+    outline: none;
+    border-color: #ff5e0f;
+    box-shadow: 0 0 0 3px rgba(247, 73, 25, 0.1);
+  }
+  
+  /* Button styles */
+  .login-container button {
+    background: #ff5e0f;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  /* Button hover state */
+  .login-container button:hover {
+    background: rgb(64, 194, 64);
+  }
+  
+  /* Disabled button state */
+  .login-container button:disabled {
+    background: #9CA3AF;
+    cursor: not-allowed;
+  }
+  
+  /* Error text styling */
+  .error-text-login {
+    color: #EF4444;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Logo styling */
+  .login-logo {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Login title */
+  .login {
+    font-size: 2em;
+    font-weight: 600;
+    color: #ff5e0f;
+    position: relative;
+  }
+  
+  /* Positioning the logo in the top right corner inside the form */
+  .logo {
+    position: absolute;
+    top: 28px;
+    right: 15px;
+    width: 50px;
+    height: auto;
+  }
+  
+  /* Styling for the 'Register' link */
+  .dfg {
+    height: 100px;
+    width: 100px;
+    transition: width 2s height 3s;
+  }
+  
+  .dfg:hover {
+    width: 30px;
+  }
+  
+  /* Register link styling */
+  .Reg {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .reg {
+    color: #ff5e0f;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .reg:hover {
+    color: #cb2b27;
+  }
+  
+  /* Media Queries for Mobile Devices */
+  @media (max-width: 480px) {
+    .login-container form {
+      padding: 20px; /* Reduce padding for small screens */
+      width: 90%; /* Allow more space for small devices */
+    }
+    
+    .login-container input {
+      font-size: 0.9rem; /* Adjust font size */
+      padding: 0.8rem; /* Adjust padding */
+    }
+    
+    .login-container button {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem; /* Adjust button size */
+    }
+  }
+  
+  /* Tablets (max width: 768px) */
+  @media (max-width: 768px) {
+    .login-container form {
+      padding: 30px; /* Moderate padding for medium screens */
+      width: 80%; /* Allow better spacing */
+    }
+    
+    .login-container input {
+      font-size: 1rem; /* Slightly larger font */
+      padding: 1rem; /* Balanced padding */
+    }
+    
+    .login-container button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem; /* Maintain button size */
+    }
+  }
+  
+  /* Laptops and desktops (min width: 769px) */
+  @media (min-width: 769px) {
+    .login-container form {
+      max-width: 400px;
+    }
+    
+    .login-container input {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+    
+    .login-container button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
