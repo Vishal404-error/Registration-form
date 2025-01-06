@@ -199,10 +199,7 @@ import StudentDashboard from "./components/StudentDashboard";
 
 
 
-// const linkContainerStyle = {
-//   marginTop: "0px",
-//   textAlign: "center",
-// };
+
 
 const App = () => {
   return (
