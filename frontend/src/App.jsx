@@ -197,15 +197,7 @@ import Login from "./components/Login";
 // import backgroundImage from "./assets/bg.png";
 import StudentDashboard from "./components/StudentDashboard";
 
-// Reusable styles
-// const containerStyle = {
-//   backgroundColor: "rgba(255, 255, 255, 0.8)",
-//   borderRadius: "30px",
-//   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-//   padding: "10px 30px",
-//   width: "80%",
-//   boxSizing: "border-box",
-// };
+
 
 // const linkContainerStyle = {
 //   marginTop: "0px",
